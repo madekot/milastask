@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    /*font-family: 'Poppins', 'Arial', sans-serif;*/
+    /*font-family: 'Source Sans Pro', 'Arial', sans-serif;*/
 }
 
 .page__inner {
@@ -11,11 +13,9 @@ body {
 
 /*list*/
 .list {
-    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    list-style: none;
 }
 
 /*layout*/
@@ -24,60 +24,65 @@ body {
     flex-wrap: wrap;
 }
 
-.layout__col-1 {
-    width: 70px;
-}
-
-.layout__col-2 {
-    width: 170px;
-}
-
-.layout__col-3 {
-    width: 270px;
-}
-
-.layout__col-4 {
-    width: 370px;
-}
-
-.layout__col-5 {
-    width: 470px;
-}
-
-.layout__col-6 {
-    width: 570px;
-}
-
-.layout__col-12 {
-    width: 1170px;
-}
-
+.layout__col-1 {width: 70px;}
+.layout__col-2 {width: 170px;}
+.layout__col-3 {width: 270px;}
+.layout__col-4 {width: 370px;}
+.layout__col-5 {width: 470px;}
+.layout__col-6 {width: 570px;}
+.layout__col-7 {width: 670px;}
+.layout__col-8 {width: 770px;}
+.layout__col-9 {width: 870px;}
+.layout__col-10 {width: 970px;}
+.layout__col-11 {width: 1070px;}
+.layout__col-12 {width: 1170px;}
 
 /*text*/
 .text {
     font-family: 'Rubik', 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    /*font-family: 'Poppins', 'Arial', sans-serif;*/
-    /*font-family: 'Source Sans Pro', 'Arial', sans-serif;*/
 }
 
-.text--center {
+.text--align-center {
     text-align: center;
 }
 
-.text__title {
+
+.title {
+    font-weight: 500; /*medium*/
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
-.text__paragraph {
-    margin-bottom: 0;
+.paragraph {
+    font-weight: 400; /*regular*/
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/*services-list-title*/
+.services-list-title {
+    font-size: 18px;
+    line-height: 4.166;
 }
 
 /*services*/
+.services__title {
+    margin-bottom: 25px;
+}
+
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-list-intro {
+    font-size: 16px;
+    line-height: 1.562;
+    color: rgb(101, 101, 101);
+}
+
 .services__text {
     box-sizing: border-box;
     padding-right: 70px;
@@ -87,15 +92,26 @@ body {
     min-height: 160px;
 }
 
-/*services-list*/
-.services-list__item {
-    padding: 28px;
-    padding-bottom: 40px;
+/*services-title*/
+.services-title {
+    font-size: 30px;
+    line-height: normal;
+    color: rgb(17, 17, 17);
 }
 
-.services-list__title {
-    padding-top: 50px;
-    margin-bottom: 30px;
+.services-intro {
+    font-size: 16px;
+    line-height: 1.625;
+    color: rgb(38, 38, 38);
+}
+
+/*services-list*/
+.services-list__item {
+    padding: 28px 28px 40px;
+}
+
+.services-list-title {
+    padding-top: 25px;
     background-image: url(image/services-list__icon.png.png);
     background-repeat: no-repeat;
     background-position: top center;
