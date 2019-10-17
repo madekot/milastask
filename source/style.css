@@ -40,24 +40,34 @@ body {
 /*text*/
 .text {
     font-family: 'Rubik', 'Arial', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .text--align-center {
     text-align: center;
 }
 
-
-.title {
-    font-weight: 500; /*medium*/
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.paragraph {
+.text--regular {
     font-weight: 400; /*regular*/
-    margin-top: 0;
-    margin-bottom: 0;
 }
+
+.text--medium {
+    font-weight: 500; /*medium*/
+}
+
+/*.title {*/
+/*    font-weight: 500; !*medium*!*/
+/*    margin-top: 0;*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+
+/*.paragraph {*/
+/*    !*font-weight: 400; !*regular*!*!*/
+/*    margin-top: 0;*/
+/*    margin-bottom: 0;*/
+/*}*/
 
 
 /*services-list-title*/
