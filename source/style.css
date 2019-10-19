@@ -24,3 +24,67 @@ body {
     padding: 0;
     list-style: none;
 }
+
+/*link*/
+.link {
+    text-decoration: none;
+    display: flex;
+}
+
+.link__button--theme-dark {
+    color: white;
+    background-color: black;
+}
+
+.link__button--theme-light {
+    color: black;
+    background-color: white;
+}
+
+.link__text--theme-light {
+    color: black;
+    background-color: white;
+}
+
+.link__text--theme-dark {
+    color: white;
+    background-color: black;
+}
+
+.link__text--icon-dark {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(image/link__icon.png);
+}
+
+.link__text--icon-light {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(image/link__icon--color-white.png);
+}
+
+.link--size-l {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2.533;
+}
+
+.link--size-l .link__text {
+    font-weight: 500;
+}
+
+.link--size-l .link__button {
+    padding-right: 8px;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.link--size-l .link__text--icon-light {
+    padding-left: 6px;
+    padding-right: 23px;
+}
+
+.link--size-l .link__text--icon {
+    padding-left: 5px;
+    padding-right: 23px;
+}
