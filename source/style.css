@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    /*font-family: 'Poppins', 'Arial', sans-serif;*/
+    /*font-family: 'Source Sans Pro', 'Arial', sans-serif;*/
+}
+
+/*page*/
+.page {
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+}
+
+.page__inner {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/*list*/
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
