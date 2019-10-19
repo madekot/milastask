@@ -4,6 +4,11 @@ body {
     /*font-family: 'Source Sans Pro', 'Arial', sans-serif;*/
 }
 
+.page {
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+}
 
 .page__inner {
     max-width: 1170px;
@@ -53,96 +58,176 @@ body {
     color: rgb(0, 0, 0);
 }
 
-
+/*link*/
 .link {
     text-decoration: none;
-    text-align: center;
     display: flex;
+    align-items: center;
 }
 
-.link__text {
-    padding: 5px;
-    font-size: 15px;
+.link--theme-dark .link__button {
+    color: white;
+    background-color: black;
 }
 
-.link__text--icon  {
-    padding-right: 20px;
+.link--theme-light .link__button {
+    color: black;
+    background-color: white;
+}
+
+.link--size-m .link__button {
+padding: 4px 17px;
+font-weight: 400;
+}
+
+.link--size-l .link__button {
+    padding: 2px 17px;
+    font-weight: 500;
+}
+
+.link--size-l {
+font-weight: 500;
+}
+
+.link--size-l .link__text {
+    padding: 2px 17px;
+}
+
+/*.link__text--dark {*/
+/*    color: white;*/
+/*    background-color: black;*/
+/*}*/
+
+/*.link__text--light {*/
+/*    color: black;*/
+/*    font-weight: 500;*/
+/*    background-color: white;*/
+/*}*/
+
+.link__text--icon {
+    padding-right: 15px;
     background-repeat: no-repeat;
     background-position: right center;
 }
 
-.link__text--light.link__text--icon {
-    background-image: url(image/link__icon.png);
+.link--theme-dark .link__text--icon {
+     background-image: url(image/link__icon.png);
 }
-
-.link__text--dark.link__text--icon {
+.link--theme-light .link__text--icon {
     background-image: url(image/link__icon--color-white.png);
 }
 
-.about-me__link {
+.link--size-m {
+    font-size: 15px;
     line-height: 1.666;
 }
 
-.about-me__link--size-big {
-    min-width: 64px;
+.link--size-m .link__text {
+    padding: 4px;
 }
 
-.link__text--light {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+.link--theme-dark .link__text {
+    color: black;
+    background-color: white;
+    font-weight: 500;
 }
 
-.link__text--dark {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+.link--theme-light .link__text {
+    color: white;
+    background-color: black;
+    font-weight: 500;
 }
 
-.services-list__item-title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500; /*medium*/
-    line-height: 4.166;
-    color: rgb(34, 34, 34);
-    padding-top: 25px;
-    background-image: url(image/services-list__icon.png.png);
-    background-repeat: no-repeat;
-    background-position: top center;
+.link--size-m .link__text--icon {
+    padding-right: 23px;
+}
+
+.link--size-l {
+    font-size: 15px;
+    line-height: 2.533;
+}
+
+.link--size-l .link__text {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.link--size-l .link__text--size {
+    padding-right: 8px;
+    padding-left: 16px;
+}
+
+.link--size-l .link__text--icon {
+    padding-right: 23px;
 }
 
 
 /*services*/
-.services__title {
+.services {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+}
+
+.services__title {
+    margin-top: 0;
     margin-bottom: 25px;
     font-size: 30px;
+    line-height: 1.2;
     font-weight: 500; /*medium*/
     color: rgb(0, 0, 0);
 }
 
-.services__intro {
-    text-align: center;
+.services__title-intro {
     font-weight: 400; /*regular*/
     font-size: 16px;
     line-height: 1.625;
     color: rgb(38, 38, 38);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.services__text-container {
+.services__title-container {
+    width: 570px;
     box-sizing: border-box;
     padding-right: 70px;
     padding-left: 70px;
     margin: 0 auto;
     padding-bottom: 30px;
-    min-height: 160px;
+}
+
+.services__list {
+    width: 1170px;
 }
 
 /*services-list*/
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .services-list__item {
+    width: 370px;
     box-sizing: border-box;
     box-shadow: 0 0 10px 0 rgba(73, 73, 73, 0.4);
     margin-right: 30px;
     padding: 28px 28px 40px;
+}
+
+.services-list__item-title {
+    font-size: 18px;
+    font-weight: 500; /*medium*/
+    line-height: 4.166;
+    color: rgb(34, 34, 34);
+    padding-top: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-image: url(image/services-list__icon.png.png);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .services-list__item:hover {
@@ -173,8 +258,9 @@ body {
     margin-top: 30px;
 }
 
-.services-list__item-intro {
-    text-align: center;
+.services-list__item-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.562;
     color: rgb(101, 101, 101);
