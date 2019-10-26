@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    /*font-family: 'Poppins', 'Arial', sans-serif;*/
-    /*font-family: 'Source Sans Pro', 'Arial', sans-serif;*/
 }
 
 /*page*/
@@ -9,6 +7,11 @@ body {
     font-family: 'Rubik', 'Arial', sans-serif;
     font-weight: 400;
     color: rgb(88, 88, 88);
+}
+
+.portfolio__wrapper {
+    width: 100%;
+    background-color: rgb(2, 2, 2);
 }
 
 .page__inner {
@@ -29,4 +32,102 @@ body {
 .link {
     text-decoration: none;
     display: flex;
+}
+
+/*portfolio*/
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 2, 2);
+}
+
+.portfolio__title-box {
+    width: 570px;
+    text-align: center;
+    /*letter-spacing: 5px;*/
+    margin-bottom: 60px;
+}
+
+.portfolio__title {
+    margin-top: 0;
+    font-size: 36px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.portfolio__title-description {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.625;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.portfolio__menu {
+    width: 770px;
+}
+
+/*portfolio-list*/
+.portfolio-list__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*.menu*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link__menu {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 2, 2);
+    font-size: 18px;
+    line-height: 1.444;
+    padding: 30px;
+}
+
+.portfolio__list {
+    width: 1170px;
+}
+
+/*.portfolio-list*/
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-list__list {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(293px, auto);
+    grid-gap: 30px;
+}
+
+.portfolio-list__item--size-tiny {
+    grid-column: auto / span 3;
+}
+
+.portfolio-list__item--size-small {
+    grid-column: auto / span 4;
+}
+
+.portfolio-list__item--size-big {
+    grid-column: auto / span 7;
+}
+
+.portfolio-list__item--size-medium {
+    grid-column: auto / span 5;
 }
