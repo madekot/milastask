@@ -131,7 +131,7 @@ body {
 }
 
 .site-menu__text {
-    padding-top: 12px;
+    padding-top: 4px;
     box-sizing: border-box;
 }
 
@@ -157,14 +157,25 @@ body {
     padding-bottom: 160px;
 }
 
+.banner__list::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -467px;
+    top: 276px;
+    border: 32px solid rgba(44, 44, 44, 0.1);
+    border-radius: 50%;
+}
+
 .banner__top-content::after {
     content: "";
     position: absolute;
     z-index: -10;
     width: 629px;
     height: 943px;
-    right: -10px;
-    top: 53px;
+    right: -27px;
+    top: 54px;
     background-image: url(image/banner__bg-image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -177,7 +188,7 @@ body {
 
 .banner__social {
     position: absolute;
-    right: -278px;
+    right: -296px;
     top: 267px;
 }
 
@@ -194,7 +205,7 @@ body {
 .banner__item {
     box-sizing: border-box;
     background: rgb(255, 255, 255);
-    padding: 55px;
+    padding: 52px;
     width: 390px;
     box-shadow: 0 0 7px 0 rgba(73, 73, 73, 0.4);
 }
@@ -211,18 +222,22 @@ body {
 
 .banner-name__text-box {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-right: 77px;
 }
 
 .banner-name__title {
+    text-align: left;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     font-size: 60px;
     line-height: 1.083;
     font-weight: 500;
+    letter-spacing: -2px;
 }
 
 .banner-name__intro {
+    width: 490px;
     margin-top: 0;
     font-size: 16px;
     line-height: 1.75;
@@ -230,8 +245,9 @@ body {
 
 .banner-name__link {
     align-self: center;
+    padding-right: 80px;
     font-size: 15px;
-    line-height: 2.533;
+    line-height: 33px;
     font-weight: 500;
 }
 
@@ -344,6 +360,8 @@ body {
 }
 
 .banner-list__link {
+    font-size: 13px;
+    line-height: 1.846;
     font-weight: 500;
     color: rgb(0, 0, 0);
 }
