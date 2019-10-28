@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    /*font-family: 'Poppins', 'Arial', sans-serif;*/
-    /*font-family: 'Source Sans Pro', 'Arial', sans-serif;*/
 }
 
 /*page*/
@@ -11,12 +9,57 @@ body {
     color: rgb(88, 88, 88);
 }
 
+.page__portfolio {
+    padding-top: 95px;
+    padding-bottom: 119px;
+}
+
+.page__header-wrapper {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.page__banner-wrapper {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
 .page__inner {
     max-width: 1170px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.banner {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.banner__text-box {
+    width: 570px;
+}
+
+.banner__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 1.083;
+    font-weight: 500;
+}
+
+.banner__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.bunner__link {
+    
+}
+
+
 
 /*list*/
 .list {
@@ -31,224 +74,76 @@ body {
     display: flex;
 }
 
-.link__button--theme-dark {
-    color: white;
-    background-color: black;
-}
-
-.link__button--theme-light {
-    color: black;
-    background-color: white;
-}
-
-.link__text--theme-light {
-    color: black;
-    background-color: white;
-}
-
-.link__text--theme-dark {
-    color: white;
-    background-color: black;
-}
-
-.link__text--icon-dark {
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-image: url(image/link__icon.png);
-}
-
-.link__text--icon-light {
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-image: url(image/link__icon--color-white.png);
-}
-
-.link--size-l {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 2.533;
-}
-
-.link--size-l .link__text {
-    font-weight: 500;
-}
-
-.link--size-l .link__button {
-    padding-right: 8px;
+.link__button {
+    background-color: rgb(255, 255, 255);
     padding-left: 15px;
-    font-weight: 500;
+    padding-right: 8px;
 }
 
-.link--size-l .link__text--icon-light {
-    padding-left: 6px;
-    padding-right: 23px;
+.header {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
-.link--size-l .link__text--icon {
-    padding-left: 5px;
-    padding-right: 23px;
-}
-
-/*news*/
-.news {
+.navigation {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.news__title-box {
-    text-align: center;
-    width: 570px;
-    margin: 0 auto 70px;
+.navigation__logo {
+    width: 170px;
+    margin-right: auto;
 }
 
-.news__title-text {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 40px;
-    line-height: 0.75;
-    color: rgb(6, 6, 6);
-    font-weight: 500;
+/*logo*/
+.logo__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.news__title-intro {
+.site-menu {
     margin: 0;
-    font-size: 18px;
-    line-height: 1.388;
-    color: rgb(111, 111, 111);
-    font-weight: 400;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.news__list {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-auto-flow: dense;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}
-
-.news__list-item--layout-size-m {
-    grid-column: auto / span 5;
-    grid-row: auto / span 2;
-}
-
-.news__list-item--layout-size-m .news__new {
-    flex-direction: column;
-}
-
-.news__list-item--layout-size-l {
-    grid-column: auto / span 7;
-    grid-row: auto / span 1;
-}
-
-.news__list-item {
-    padding: 7px;
+.header__site-menu {
     box-sizing: border-box;
-    box-shadow: 0 0 7px 0 rgb(185, 185, 186);
+    max-width: 570px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.news__new {
-    display: flex;
-}
-
-.news__link {
-    grid-column: 2 / span 1;
-    grid-row: auto;
-}
-
-.news__image {
-    width: 100%;
-    display: block;
-    margin-bottom: 28px;
-    object-fit: cover;
-}
-
-.news__list-item--layout-size-l .news__image {
-    margin-bottom: 0;
-    width: 263px;
-    height: 254px;
-}
-
-.news__list-item--layout-size-l .news__author-info {
-    padding-top: 15px;
-}
-
-.news__author-info {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.news__item-text-box {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-}
-
-.news__item-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 500;
-    color: rgb(86, 86, 86);
-}
-
-.news__item-text {
-    margin-top: 0;
-    margin-bottom: 0;
+.site-menu__link {
     font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: rgb(126, 126, 126);
+    line-height: 1.25;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
-.news__link {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16px;
-    line-height: 2.187;
-    color: rgb(68, 68, 68);
-    font-weight: 400;
+.site-menu__item:last-child .site-menu__link {
+    padding-right: 0;
 }
 
-/*.author-info*/
-.author-info {
-    display: flex;
-    font-family: 'Source Sans Pro', 'Arial', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.714;
-    color: rgb(133, 133, 133);
+.site-menu__item {
+    position: relative;
 }
 
-.author-info__item:last-child .author-info__text {
-    margin-right: 0;
+.site-menu__text {
+    padding-top: 12px;
+    box-sizing: border-box;
 }
 
-.author-info__text {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 39px;
-}
-
-.author-info__text-icon-name {
-    padding-left: 22px;
-    background-image: url(image/author-info__icon--name.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-.author-info__text-icon-time {
-    padding-left: 27px;
-    background-image: url(image/author-info__icon--time.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-.author-info__text-icon-calendar {
-    padding-left: 27px;
-    background-image: url(image/author-info__icon--calendar.png);
-    background-repeat: no-repeat;
-    background-position: left center;
+.site-menu__item--active .site-menu__text {
+    background-image: linear-gradient(to right,  #ffffff 5px, transparent 5px, #ffffff 6px, #ffffff 6px);
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    background-position: top center;
 }
