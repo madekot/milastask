@@ -19,12 +19,47 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+.page__banner-wrapper {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
 .page__inner {
     max-width: 1170px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.banner {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.banner__text-box {
+    width: 570px;
+}
+
+.banner__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 1.083;
+    font-weight: 500;
+}
+
+.banner__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.bunner__link {
+    
+}
+
+
 
 /*list*/
 .list {
@@ -37,6 +72,12 @@ body {
 .link {
     text-decoration: none;
     display: flex;
+}
+
+.link__button {
+    background-color: rgb(255, 255, 255);
+    padding-left: 15px;
+    padding-right: 8px;
 }
 
 .header {
@@ -106,3 +147,4 @@ body {
     background-repeat: repeat-x;
     background-position: top center;
 }
+
